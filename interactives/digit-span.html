@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Working Memory Demo: Digit Span</title>
+  <style>
+    body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.55; margin: 0; padding: 1.25rem; background: #f7f9fb; color: #17212b; }
+    .card { max-width: 780px; margin: 0 auto; background: white; border: 1px solid #d8e0e8; border-radius: 14px; padding: 1.25rem; box-shadow: 0 3px 14px rgba(0,0,0,.06); }
+    h1 { font-size: 1.45rem; margin: 0 0 .35rem; }
+    h2 { font-size: 1.1rem; margin-top: 1.25rem; }
+    .muted { color: #586574; }
+    .digits { font-size: 2.4rem; letter-spacing: .35rem; text-align: center; font-weight: 800; margin: 1.25rem 0; min-height: 3.5rem; color: #25476a; }
+    .controls { display: flex; flex-wrap: wrap; gap: .5rem; margin: 1rem 0; }
+    button { border: 0; border-radius: 10px; padding: .65rem .9rem; font-weight: 700; background: #25476a; color: white; cursor: pointer; }
+    button.secondary { background: #e9eef4; color: #17212b; }
+    button:disabled { opacity: .5; cursor: not-allowed; }
+    input { width: 100%; box-sizing: border-box; border: 1px solid #c7d1db; border-radius: 10px; padding: .75rem; font-size: 1.1rem; letter-spacing: .15rem; }
+    .feedback { padding: .8rem; border-radius: 10px; margin-top: .75rem; background: #f0f4f8; }
+    .good { background: #ecf8ef; border: 1px solid #b7dfc1; }
+    .bad { background: #fff1ef; border: 1px solid #e6b9b1; }
+    .row { display: grid; grid-template-columns: 1fr 1fr; gap: .75rem; }
+    @media (max-width: 640px) { .row { grid-template-columns: 1fr; } .digits { font-size: 2rem; letter-spacing: .22rem; } }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <h1>Working Memory Demo: Digit Span</h1>
+    <p class="muted">This quick activity demonstrates that working memory is limited and that organization changes what the mind can hold.</p>
+
+    <h2>Round 1: Raw digits</h2>
+    <p>Click <strong>Show digits</strong>. Try to remember the digits in order. They will disappear quickly.</p>
+    <div class="digits" id="digits">Ready</div>
+    <div class="controls">
+      <button id="showBtn">Show digits</button>
+      <button class="secondary" id="longerBtn">Make harder</button>
+      <button class="secondary" id="resetBtn">Reset</button>
+    </div>
+    <label for="answer"><strong>Your answer</strong></label>
+    <input id="answer" inputmode="numeric" autocomplete="off" placeholder="Type the digits in order" />
+    <div class="controls"><button id="checkBtn">Check</button></div>
+    <div id="feedback" class="feedback">Current length: <strong id="level">5</strong> digits.</div>
+
+    <h2>Round 2: Chunking</h2>
+    <p>Now compare these two strings. Which one is easier to remember?</p>
+    <div class="row">
+      <div class="feedback"><strong>Unchunked:</strong><br><span style="font-size:1.25rem; letter-spacing:.1rem;">1 7 7 6 1 9 4 5 2 0 2 6</span></div>
+      <div class="feedback"><strong>Chunked:</strong><br><span style="font-size:1.25rem;">1776 &nbsp; 1945 &nbsp; 2026</span></div>
+    </div>
+
+    <div class="feedback" style="margin-top:1rem;">
+      <strong>Psychology point:</strong> working memory does not simply hold a fixed amount of information. It holds information better when that information is organized into meaningful chunks. That is why concepts, examples, categories, and patterns matter for studying.
+    </div>
+  </main>
+
+  <script>
+    const digitsEl = document.getElementById('digits');
+    const answerEl = document.getElementById('answer');
+    const feedbackEl = document.getElementById('feedback');
+    const levelEl = document.getElementById('level');
+    const showBtn = document.getElementById('showBtn');
+    const longerBtn = document.getElementById('longerBtn');
+    const resetBtn = document.getElementById('resetBtn');
+    const checkBtn = document.getElementById('checkBtn');
+    let length = 5;
+    let current = '';
+
+    function makeDigits(n) {
+      let s = '';
+      for (let i = 0; i < n; i++) s += Math.floor(Math.random() * 10);
+      return s;
+    }
+
+    function showDigits() {
+      current = makeDigits(length);
+      answerEl.value = '';
+      feedbackEl.className = 'feedback';
+      feedbackEl.innerHTML = `Current length: <strong>${length}</strong> digits. Watch closely.`;
+      digitsEl.textContent = current.split('').join(' ');
+      showBtn.disabled = true;
+      setTimeout(() => {
+        digitsEl.textContent = 'Type what you remember';
+        showBtn.disabled = false;
+        answerEl.focus();
+      }, Math.max(1200, length * 450));
+    }
+
+    function checkAnswer() {
+      const ans = answerEl.value.replace(/\D/g, '');
+      if (!current) {
+        feedbackEl.className = 'feedback';
+        feedbackEl.textContent = 'Show a digit string first.';
+        return;
+      }
+      if (ans === current) {
+        feedbackEl.className = 'feedback good';
+        feedbackEl.innerHTML = `Correct. You held <strong>${length}</strong> digits in order. Try making it harder.`;
+      } else {
+        feedbackEl.className = 'feedback bad';
+        feedbackEl.innerHTML = `Not quite. Correct answer: <strong>${current}</strong>. Your answer: <strong>${ans || '(blank)'}</strong>.`;
+      }
+    }
+
+    showBtn.addEventListener('click', showDigits);
+    checkBtn.addEventListener('click', checkAnswer);
+    longerBtn.addEventListener('click', () => { length = Math.min(12, length + 1); levelEl.textContent = length; feedbackEl.className = 'feedback'; feedbackEl.innerHTML = `Current length: <strong>${length}</strong> digits.`; });
+    resetBtn.addEventListener('click', () => { length = 5; current = ''; answerEl.value = ''; digitsEl.textContent = 'Ready'; levelEl.textContent = length; feedbackEl.className = 'feedback'; feedbackEl.innerHTML = `Current length: <strong>${length}</strong> digits.`; });
+    answerEl.addEventListener('keydown', (e) => { if (e.key === 'Enter') checkAnswer(); });
+  </script>
+</body>
+</html>
