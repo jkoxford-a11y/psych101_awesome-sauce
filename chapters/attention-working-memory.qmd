@@ -1,0 +1,62 @@
+---
+title: "Attention and Working Memory"
+subtitle: "Why being near information is not the same as learning"
+---
+
+::: {.callout-note title="Core question"}
+What has to happen before information can become a durable memory?
+:::
+
+# Attention is the gateway
+
+Being near information is not the same as attending to it. Psychology begins with a simple but uncomfortable truth: your mind cannot fully process everything available to it. Conscious attention acts like a spotlight. It selects a small portion of information for deeper processing and leaves much of the rest outside awareness.
+
+Information comes in through the senses. Attention selects some of it. Working memory holds and manipulates it. Long-term memory may eventually store it. If attention does not select the information in a meaningful way, memory has very little to work with.
+
+## Selective attention
+
+**Selective attention** is your conscious focus on one stimulus or task. It allows you to listen to one conversation in a crowded room, follow a lecture while ignoring hallway noise, or focus on a paragraph while other things are happening around you.
+
+But selective attention has a cost. When you focus on one thing, you become less aware of other things. This is why people can miss obvious changes in their environment or fail to notice something unexpected. Psychologists call these failures **inattentional blindness** and **change blindness**.
+
+Emma’s mistake is not that she is lazy. Her mistake is that she confuses **exposure** with **attention**.
+
+::: {.callout-warning title="Student Myth"}
+**Myth:** “I can multitask if the class is easy.”
+
+You may be able to switch tasks quickly, but switching is not the same as fully attending to both tasks. If the material requires working memory — definitions, examples, comparisons, explanations — divided attention weakens encoding.
+:::
+
+# Working memory: the mental workspace
+
+Once information enters awareness, it depends on **working memory**. Working memory is the active mental workspace where you hold and manipulate information. It is what you use when solving a math problem in your head, following a complicated sentence, comparing two theories, or trying to remember the beginning of a definition while reading the end of it.
+
+Working memory is powerful, but limited. This is why long, dense, unfamiliar material can feel mentally exhausting. It overloads the workspace.
+
+Imagine trying to understand this definition:
+
+> Memory is the persistence of learning over time through the encoding, storage, and retrieval of information.
+
+That sentence contains several linked ideas. To understand it, you must hold “memory,” “learning,” “encoding,” “storage,” and “retrieval” in mind long enough to connect them. If your attention is divided, working memory drops pieces of the sentence before you can integrate them.
+
+# Try it: backward digit span
+
+This activity is closer to the in-class/PPT demonstration. You will see digits briefly, but you must type them **backward**. That means you have to hold the digits in mind and manipulate their order.
+
+<iframe src="../interactives/digit-span.html" title="Backward Digit Span Working Memory Demo" width="100%" height="820" style="border: 1px solid #d8e0e8; border-radius: 14px;"></iframe>
+
+::: {.callout-note title="Debrief"}
+Backward digit span is harder than simply repeating digits forward because it requires both storage and manipulation. That is working memory: holding information in mind while doing something with it.
+:::
+
+# Retrieval check
+
+1. Why is attention called the gateway to learning?
+2. How is exposure different from attention?
+3. Why does multitasking interfere with working memory?
+4. What is the difference between recognizing material and retrieving it?
+5. Why is backward digit span a better working-memory demonstration than forward digit span?
+
+::: {.callout-important title="Key takeaway"}
+You cannot remember everything you encounter. You are most likely to remember what you meaningfully attend to, organize in working memory, and later retrieve.
+:::
