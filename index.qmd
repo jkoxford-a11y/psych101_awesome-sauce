@@ -1,0 +1,22 @@
+---
+title: "PSYC101 Awesome Sauce"
+subtitle: "Interactive course materials for General Psychology"
+---
+
+Welcome. This site is a draft space for custom PSYC101 materials.
+
+The first chapter is an integrated learning-science unit:
+
+## [How Studying Works](how-studying-works.qmd)
+
+**Attention, Memory, Sleep, and Learning**
+
+This chapter explains why studying often feels productive without producing durable learning. It integrates core PSYC101 concepts from consciousness, memory, sleep, and learning.
+
+Core through-line:
+
+> Attention selects → memory encodes → retrieval strengthens → spacing stabilizes → sleep consolidates → reinforcement shapes habits.
+
+::: {.callout-note title="Draft status"}
+This is an early draft. The text is intentionally complete enough to read, but interactives and polish will be added after the narrative structure is stable.
+:::
