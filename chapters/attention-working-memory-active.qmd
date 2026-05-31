@@ -1,10 +1,14 @@
 ---
-title: "Attention and Working Memory: Active Evidence"
-subtitle: "Complete, save, and submit your learning evidence"
+title: "Attention and Working Memory: Evidence Page"
+subtitle: "Type your responses, save as PDF, and submit as evidence"
 ---
 
 ::: {.callout-important title="Submission workflow"}
-Complete each response box on this page. Your answers are saved only in this browser on this device. When finished, click **Print / Save PDF** and upload the PDF to D2L if your instructor assigns it.
+Complete the response boxes on this page. Your answers are saved only in this browser on this device. When finished, click **Print / Save PDF** and upload the PDF to D2L if assigned.
+:::
+
+::: {.callout-warning title="Important"}
+Do not switch browsers or devices before saving your PDF. This page uses local browser storage, not a server.
 :::
 
 ```{=html}
@@ -16,9 +20,9 @@ Complete each response box on this page. Your answers are saved only in this bro
     margin: 1.2rem 0;
     background: #f7f9fb;
   }
-  .evidence-panel textarea {
+  .evidence-panel textarea,
+  .evidence-panel input[type="text"] {
     width: 100%;
-    min-height: 110px;
     box-sizing: border-box;
     border: 1px solid #c7d1db;
     border-radius: 10px;
@@ -26,6 +30,7 @@ Complete each response box on this page. Your answers are saved only in this bro
     font: inherit;
     background: white;
   }
+  .evidence-panel textarea { min-height: 115px; }
   .evidence-panel label { font-weight: 700; display: block; margin: .5rem 0 .25rem; }
   .evidence-controls { display: flex; flex-wrap: wrap; gap: .5rem; margin: .7rem 0; }
   .evidence-controls button, .print-btn {
@@ -38,14 +43,6 @@ Complete each response box on this page. Your answers are saved only in this bro
     cursor: pointer;
   }
   .evidence-controls button.secondary { background: #e9eef4; color: #17212b; }
-  .model-answer {
-    display: none;
-    margin-top: .75rem;
-    padding: .85rem;
-    border-left: 5px solid #d69b2d;
-    background: #fff8e6;
-    border-radius: 10px;
-  }
   .progress-wrap {
     border: 1px solid #d8e0e8;
     border-radius: 14px;
@@ -55,21 +52,35 @@ Complete each response box on this page. Your answers are saved only in this bro
   }
   .bar { height: 16px; background: #e9eef4; border-radius: 999px; overflow: hidden; }
   .bar-fill { height: 100%; width: 0%; background: #25476a; transition: width .25s ease; }
-  .rating-row { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: .5rem; }
-  .rating-row label { font-weight: 500; display: inline-flex; gap: .35rem; align-items: center; }
+  .small { font-size: .92rem; color: #586574; }
+  .mini-grid { display: grid; grid-template-columns: 1fr 1fr; gap: .75rem; }
+  @media (max-width: 680px) { .mini-grid { grid-template-columns: 1fr; } }
   @media print {
-    .evidence-controls, .print-btn, .no-print { display: none !important; }
-    .model-answer { display: block !important; }
-    textarea { border: 1px solid #777 !important; min-height: 90px; }
-    iframe { display: none; }
+    .evidence-controls, .print-btn, .no-print, iframe { display: none !important; }
+    textarea { border: 1px solid #777 !important; min-height: 95px; }
+    body { font-size: 11.5pt; }
+    .evidence-panel { break-inside: avoid; background: white; }
   }
 </style>
 
 <div class="progress-wrap">
   <strong>Progress:</strong> <span id="progressText">0% complete</span>
   <div class="bar" aria-hidden="true"><div class="bar-fill" id="progressFill"></div></div>
-  <p class="small">Progress counts response boxes with at least 40 characters.</p>
+  <p class="small">Progress counts response boxes with at least 40 characters and completed name/date fields.</p>
   <button class="print-btn" onclick="window.print()">Print / Save PDF</button>
+</div>
+
+<div class="evidence-panel">
+  <div class="mini-grid">
+    <div>
+      <label for="student_name">Name</label>
+      <input id="student_name" type="text" data-evidence="true" placeholder="Type your name">
+    </div>
+    <div>
+      <label for="student_date">Date</label>
+      <input id="student_date" type="text" data-evidence="true" placeholder="Type the date">
+    </div>
+  </div>
 </div>
 ```
 
@@ -81,82 +92,66 @@ This activity demonstrates working memory because you must **hold** the digits a
 <iframe src="../interactives/digit-span.html" title="Backward Digit Span Working Memory Demo" width="100%" height="820" style="border: 1px solid #d8e0e8; border-radius: 14px;"></iframe>
 ```
 
-# 2. Explain what made the task difficult
+# 2. Record what happened
 
 ```{=html}
 <div class="evidence-panel">
-  <label for="wm_difficulty">Before revealing the model answer, explain what made backward digit span difficult. Use the words <em>storage</em> and <em>manipulation</em>.</label>
-  <textarea id="wm_difficulty" data-evidence="true" placeholder="Type your explanation here..."></textarea>
+  <label for="wm_result">What was the longest backward digit span you completed correctly? What happened as the digit string got longer?</label>
+  <textarea id="wm_result" data-evidence="true" placeholder="Example: I got 4 digits correct, but 5 became difficult because..."></textarea>
   <div class="evidence-controls">
-    <button onclick="toggleModel('model1')">Reveal model answer</button>
-    <button class="secondary" onclick="clearBox('wm_difficulty')">Clear</button>
-  </div>
-  <div id="model1" class="model-answer">
-    <strong>Model answer:</strong> Backward digit span is difficult because working memory has to do two things at once. First, it must store the digits long enough to keep them active. Second, it must manipulate the digits by reversing their order before responding. That extra manipulation step is why backward digit span is harder than simply repeating digits forward.
-  </div>
-  <label>Self-assessment:</label>
-  <div class="rating-row">
-    <label><input type="radio" name="rate1" data-evidence="true" value="got"> I got the key idea</label>
-    <label><input type="radio" name="rate1" data-evidence="true" value="partial"> I partly got it</label>
-    <label><input type="radio" name="rate1" data-evidence="true" value="missed"> I missed the key idea</label>
+    <button class="secondary" onclick="clearBox('wm_result')">Clear</button>
   </div>
 </div>
 ```
 
-# 3. Apply the idea to studying
+# 3. Explain the psychology
+
+```{=html}
+<div class="evidence-panel">
+  <label for="wm_difficulty">Explain why backward digit span is harder than simply repeating digits forward. Use the words <em>storage</em> and <em>manipulation</em>.</label>
+  <textarea id="wm_difficulty" data-evidence="true" placeholder="Type your explanation here..."></textarea>
+  <div class="evidence-controls">
+    <button class="secondary" onclick="clearBox('wm_difficulty')">Clear</button>
+  </div>
+</div>
+```
+
+# 4. Apply it to studying
 
 ```{=html}
 <div class="evidence-panel">
   <label for="wm_apply">How does working-memory overload help explain why rereading while distracted often fails?</label>
   <textarea id="wm_apply" data-evidence="true" placeholder="Connect working memory to distracted studying..."></textarea>
   <div class="evidence-controls">
-    <button onclick="toggleModel('model2')">Reveal model answer</button>
     <button class="secondary" onclick="clearBox('wm_apply')">Clear</button>
-  </div>
-  <div id="model2" class="model-answer">
-    <strong>Model answer:</strong> Rereading while distracted often fails because working memory is already limited. If attention keeps switching to a phone, music, or another task, the student has fewer resources available to hold and organize the psychology concept. The student may be exposed to the material, but the mind is not doing enough processing to encode it well.
-  </div>
-  <label>Self-assessment:</label>
-  <div class="rating-row">
-    <label><input type="radio" name="rate2" data-evidence="true" value="got"> I got the key idea</label>
-    <label><input type="radio" name="rate2" data-evidence="true" value="partial"> I partly got it</label>
-    <label><input type="radio" name="rate2" data-evidence="true" value="missed"> I missed the key idea</label>
   </div>
 </div>
 ```
 
-# 4. Make it personal
+# 5. Make it personal
 
 ```{=html}
 <div class="evidence-panel">
-  <label for="wm_personal">Describe one real study habit of yours that either protects working memory or overloads it. What specific change could you try?</label>
+  <label for="wm_personal">Describe one real study habit of yours that either protects working memory or overloads it. What specific change could you try before the next quiz?</label>
   <textarea id="wm_personal" data-evidence="true" placeholder="Describe your habit and one change..."></textarea>
   <div class="evidence-controls">
-    <button onclick="toggleModel('model3')">Reveal example</button>
     <button class="secondary" onclick="clearBox('wm_personal')">Clear</button>
-  </div>
-  <div id="model3" class="model-answer">
-    <strong>Example:</strong> I often try to read while my phone is beside me. That overloads working memory because I keep switching attention. One change I could try is putting my phone across the room and doing a 10-minute retrieval task before checking it.
   </div>
 </div>
 ```
 
 ::: {.callout-important title="Final check"}
-Before submitting, make sure your responses show your thinking. A strong response does not need to be long, but it should use psychology vocabulary and apply it to the demo or to studying.
+Before submitting, make sure your responses show that you actually processed the activity. A strong response does not need to be long, but it should use psychology vocabulary and apply the demo to studying.
 :::
 
 ```{=html}
 <script>
 (function(){
-  const pageKey = 'psy101_active_wm_v1';
+  const pageKey = 'psy101_active_wm_v2_no_model_answers';
 
   function saveElement(el) {
     const data = JSON.parse(localStorage.getItem(pageKey) || '{}');
-    if (el.type === 'radio') {
-      data[el.name] = document.querySelector(`input[name="${el.name}"]:checked`)?.value || '';
-    } else {
-      data[el.id] = el.value;
-    }
+    data[el.id] = el.value;
     localStorage.setItem(pageKey, JSON.stringify(data));
     updateProgress();
   }
@@ -164,34 +159,24 @@ Before submitting, make sure your responses show your thinking. A strong respons
   function restore() {
     const data = JSON.parse(localStorage.getItem(pageKey) || '{}');
     document.querySelectorAll('[data-evidence="true"]').forEach(el => {
-      if (el.type === 'radio') {
-        if (data[el.name] === el.value) el.checked = true;
-      } else if (data[el.id]) {
-        el.value = data[el.id];
-      }
+      if (data[el.id]) el.value = data[el.id];
     });
     updateProgress();
   }
 
   function updateProgress() {
-    const textareas = Array.from(document.querySelectorAll('textarea[data-evidence="true"]'));
-    const radios = ['rate1','rate2'];
-    let total = textareas.length + radios.length;
+    const els = Array.from(document.querySelectorAll('[data-evidence="true"]'));
     let done = 0;
-    textareas.forEach(t => { if (t.value.trim().length >= 40) done++; });
-    radios.forEach(name => { if (document.querySelector(`input[name="${name}"]:checked`)) done++; });
-    const pct = Math.round((done / total) * 100);
+    els.forEach(el => {
+      const min = el.tagName.toLowerCase() === 'textarea' ? 40 : 2;
+      if ((el.value || '').trim().length >= min) done++;
+    });
+    const pct = Math.round((done / els.length) * 100);
     const fill = document.getElementById('progressFill');
     const text = document.getElementById('progressText');
     if (fill) fill.style.width = pct + '%';
     if (text) text.textContent = pct + '% complete';
   }
-
-  window.toggleModel = function(id) {
-    const el = document.getElementById(id);
-    if (!el) return;
-    el.style.display = el.style.display === 'block' ? 'none' : 'block';
-  };
 
   window.clearBox = function(id) {
     const el = document.getElementById(id);
@@ -201,9 +186,6 @@ Before submitting, make sure your responses show your thinking. A strong respons
   };
 
   document.addEventListener('input', e => {
-    if (e.target.matches('[data-evidence="true"]')) saveElement(e.target);
-  });
-  document.addEventListener('change', e => {
     if (e.target.matches('[data-evidence="true"]')) saveElement(e.target);
   });
   document.addEventListener('DOMContentLoaded', restore);
