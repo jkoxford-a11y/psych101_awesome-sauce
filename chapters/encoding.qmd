@@ -1,0 +1,69 @@
+---
+title: "Encoding"
+subtitle: "Why meaning beats exposure"
+---
+
+::: {.callout-note title="Core question"}
+How does information become memorable rather than merely familiar?
+:::
+
+# Encoding is more than getting information in
+
+Attention gets information into the mental workspace. But attention by itself is not enough. A student can focus on a page and still remember very little from it. That happens because memory depends not only on whether information was noticed, but on **how it was processed**.
+
+Some processing is shallow. It touches the surface of the material. Other processing is deep. It connects the material to meaning, examples, prior knowledge, emotion, or personal relevance.
+
+# Encoding, storage, and retrieval
+
+| Process | Basic meaning | Student example |
+|---|---|---|
+| Encoding | Getting information into the memory system | Understanding what “negative reinforcement” means |
+| Storage | Retaining encoded information over time | Keeping that concept available until the exam |
+| Retrieval | Getting information back out | Explaining negative reinforcement without notes |
+
+Students often focus on storage: “How do I keep this in my head?” But many memory failures begin earlier. The problem is not that the memory disappeared. The problem is that it was never encoded deeply enough in the first place.
+
+::: {.callout-important title="Core principle"}
+Memory is not strengthened mainly by staring at information longer. It is strengthened by processing information more meaningfully.
+:::
+
+# Shallow vs. deep processing
+
+**Shallow processing** focuses on surface features. You might notice what a word looks like, where it appeared on a page, whether it was bolded, or whether it sounds familiar.
+
+**Deep processing** focuses on meaning. It asks what the idea means, how it connects to other ideas, why it matters, and how it applies in new situations.
+
+Examples of deep processing include:
+
+- explaining a concept in your own words
+- generating your own example
+- comparing two similar concepts
+- asking why a concept works the way it does
+- connecting the concept to your life
+- organizing ideas into a hierarchy or concept map
+
+::: {.callout-note title="Classroom demonstration: surface features vs. meaning"}
+In one task, students count rounded letters in a word list. In a second task, students rate words as good/bad or powerful/weak and give reasons. Students are then unexpectedly asked to recall the words.
+
+Students usually remember more from the meaning-based task because it required deeper processing.
+:::
+
+# Chunking and self-reference
+
+**Chunking** means organizing separate pieces of information into meaningful units. A beginner may see **US**, **UR**, **CS**, and **CR** as disconnected abbreviations. Once the student understands classical conditioning, the terms become part of one organized system.
+
+Information is also easier to remember when it connects to something you already know or care about. This is the **self-reference effect**. Connecting negative reinforcement to checking your phone because boredom goes away creates a stronger memory hook than memorizing the definition alone.
+
+# AI learning check: fluent explanations are not enough
+
+AI can explain a concept in simpler language, generate examples, compare similar terms, or ask questions. But a fluent AI explanation may produce the feeling of understanding before you have encoded the idea yourself.
+
+Helpful AI prompts:
+
+- “I think negative reinforcement means _____. Is that right? Correct me.”
+- “Give me three examples and ask me which one fits the concept.”
+- “Ask me to explain this in my own words before you give feedback.”
+
+::: {.callout-important title="AI principle"}
+AI supports learning when it increases your explanation, retrieval, comparison, and feedback. AI weakens learning when it replaces those processes.
+:::
