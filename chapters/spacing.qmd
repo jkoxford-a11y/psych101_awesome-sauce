@@ -1,0 +1,60 @@
+---
+title: "Spacing"
+subtitle: "Why cramming feels useful but often fails"
+---
+
+::: {.callout-note title="Core question"}
+Why does spreading practice across time produce more durable learning than one long exposure session?
+:::
+
+# Spacing beats cramming
+
+Cramming is popular because it feels efficient. The deadline is close. The pressure is high. By the end of the night, the material feels more familiar than it did before. That familiarity can create confidence.
+
+Sometimes cramming even works in the short term. But short-term performance is not the same as durable learning.
+
+# Massed and distributed practice
+
+**Massed practice** means studying in one concentrated block. Students often call this cramming.
+
+**Distributed practice** means spreading study across time. Instead of one long session, the student studies in multiple shorter sessions separated by breaks, hours, or days.
+
+Distributed practice usually feels less dramatic than cramming. But spacing matters because each return to the material becomes a new retrieval opportunity.
+
+::: {.callout-important title="Core principle"}
+Spacing works partly because it gives you chances to forget a little, retrieve again, and rebuild access. That cycle produces more durable learning than one long exposure session.
+:::
+
+# Desirable difficulty
+
+A **desirable difficulty** is a challenge that makes learning feel harder in the moment but improves long-term retention or transfer.
+
+Retrieval practice is a desirable difficulty. Spacing is a desirable difficulty. Generating an answer before seeing the explanation is a desirable difficulty. Mixing similar concepts together can also be desirable because it forces discrimination.
+
+Not all difficulty is desirable. Confusing instructions, impossible tasks, sleep deprivation, or studying while distracted can make learning harder without making it better.
+
+# Interleaving
+
+**Interleaving** means mixing related concepts during practice. For example, once you know the basics, do not study only positive reinforcement for ten minutes, then only negative reinforcement. Mix examples and ask:
+
+- Is the behavior increasing or decreasing?
+- Is something being added or removed?
+- Is this reinforcement or punishment?
+- Is it positive or negative?
+
+Interleaving is harder because you must diagnose the example yourself. That makes it better practice for quizzes and exams.
+
+# AI learning check: do not remove the useful struggle
+
+AI can make spacing and retrieval easier to manage. It can generate practice questions, schedule review sessions, create new examples, and quiz you on older material.
+
+Better sequence:
+
+1. Try to answer from memory.
+2. Ask AI to critique or question your answer.
+3. Correct your explanation.
+4. Return later and try again.
+
+::: {.callout-important title="AI principle"}
+Use AI to create more retrieval attempts, better feedback, and spaced review. Do not use it to remove the first attempt.
+:::
