@@ -12,6 +12,22 @@ website:
         text: Home
       - href: how-studying-works.qmd
         text: How Studying Works
+      - text: Chapter Sections
+        menu:
+          - href: chapters/attention-working-memory.qmd
+            text: Attention & Working Memory
+          - href: chapters/encoding.qmd
+            text: Encoding
+          - href: chapters/retrieval.qmd
+            text: Retrieval
+          - href: chapters/spacing.qmd
+            text: Spacing
+          - href: chapters/sleep.qmd
+            text: Sleep
+          - href: chapters/study-habits.qmd
+            text: Study Habits
+          - href: chapters/learning-system-audit.qmd
+            text: Learning System Audit
       - href: working-memory-demo.qmd
         text: Working Memory Demo
   sidebar:
@@ -20,6 +36,15 @@ website:
     contents:
       - index.qmd
       - how-studying-works.qmd
+      - section: "How Studying Works"
+        contents:
+          - chapters/attention-working-memory.qmd
+          - chapters/encoding.qmd
+          - chapters/retrieval.qmd
+          - chapters/spacing.qmd
+          - chapters/sleep.qmd
+          - chapters/study-habits.qmd
+          - chapters/learning-system-audit.qmd
       - working-memory-demo.qmd
 
 format:
