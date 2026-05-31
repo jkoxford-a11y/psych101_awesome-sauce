@@ -1,0 +1,56 @@
+---
+title: "Learning System Audit"
+subtitle: "Putting attention, memory, sleep, and reinforcement together"
+---
+
+::: {.callout-note title="Core question"}
+How can you diagnose whether a study strategy is actually producing learning?
+:::
+
+# Building a better learning system
+
+The point of this chapter is not to make studying more complicated. The point is to make studying more diagnostic.
+
+When a study strategy fails, ask which part of the learning system failed:
+
+| If the problem is... | Ask... | Try... |
+|---|---|---|
+| Attention | Was I actually focused? | Remove distractions; use short focused sessions |
+| Working memory | Was I overloaded? | Chunk, organize, draw, externalize |
+| Encoding | Did I process meaning? | Generate examples; explain in your own words |
+| Retrieval | Did I practice recall? | Blank-page recall; practice questions |
+| Spacing | Did I cram? | Short returns across days |
+| Sleep | Did I protect consolidation? | Sleep before testing; review after rest |
+| Reinforcement | What behavior got rewarded? | Reward retrieval, not just time spent |
+| AI use | Did AI help me practice or practice for me? | Try first; ask for critique or quiz |
+
+# The AI decision tool
+
+Before opening AI, ask four questions:
+
+1. Is this a task where the effort itself builds the skill?
+2. Have I made a genuine attempt?
+3. If AI does this for me, what am I no longer practicing?
+4. Will I need to do this without AI on a quiz, exam, job, or conversation?
+
+::: {.callout-note title="Interactive placeholder: AI decision tree"}
+**Planned interactive:** students answer the four decision-tool questions and receive guidance about whether AI should explain, quiz, critique, hint, or stay closed.
+:::
+
+# Mastery artifact: My Learning System Audit
+
+Handwrite a brief audit of one study habit you currently use.
+
+Include:
+
+1. The study habit
+2. What it feels like in the moment
+3. What psychological process it practices
+4. What it fails to practice
+5. Whether it supports attention, encoding, retrieval, spacing, sleep, or reinforcement
+6. Whether AI could improve the habit without replacing the learning
+7. One specific change you will try before the next quiz
+
+::: {.callout-important title="Final takeaway"}
+Learning begins when the mind does the work. The best study system protects attention, builds meaning, practices retrieval, spaces effort over time, uses sleep strategically, and reinforces habits that produce durable understanding.
+:::
