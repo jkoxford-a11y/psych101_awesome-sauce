@@ -1,0 +1,48 @@
+/* PSYC101 Awesome Sauce custom styles */
+
+:root {
+  --psy-blue: #25476a;
+  --psy-gold: #d69b2d;
+  --psy-soft: #f7f9fb;
+}
+
+body {
+  line-height: 1.65;
+}
+
+h1, h2, h3 {
+  letter-spacing: -0.02em;
+}
+
+blockquote {
+  border-left: 4px solid var(--psy-gold);
+  padding-left: 1rem;
+  color: #333;
+}
+
+.callout {
+  border-radius: 0.65rem;
+}
+
+.callout-title-container {
+  font-weight: 700;
+}
+
+.table {
+  font-size: 0.95rem;
+}
+
+.hero-note {
+  background: var(--psy-soft);
+  border-left: 5px solid var(--psy-blue);
+  padding: 1rem 1.2rem;
+  border-radius: 0.65rem;
+  margin: 1.5rem 0;
+}
+
+.retrieval-check {
+  background: #fffdf5;
+  border: 1px solid #ead9a6;
+  padding: 1rem 1.2rem;
+  border-radius: 0.65rem;
+}
