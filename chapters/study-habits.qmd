@@ -1,0 +1,74 @@
+---
+title: "Study Habits"
+subtitle: "How reinforcement shapes studying"
+---
+
+::: {.callout-note title="Core question"}
+Why do ineffective study habits persist even when students know they are ineffective?
+:::
+
+# Study habits are learned behaviors
+
+Students often talk about study habits as if they are personality traits.
+
+“I’m just a procrastinator.”  
+“I can only work under pressure.”  
+“I always get distracted.”
+
+Psychology gives us a better way to think about these patterns. Study habits are learned behaviors shaped by consequences, cues, emotions, and social models.
+
+# Procrastination as negative reinforcement
+
+Imagine this sequence:
+
+1. A student thinks about an upcoming exam.
+2. The thought creates anxiety.
+3. The student avoids studying and checks the phone instead.
+4. Anxiety drops for a few minutes.
+5. Avoidance becomes more likely next time.
+
+This is **negative reinforcement**. Negative reinforcement does not mean punishment. It means a behavior increases because something unpleasant is removed.
+
+::: {.callout-important title="Core principle"}
+Avoidance can be reinforced even when it makes the long-term problem worse. If avoiding studying reduces anxiety right now, avoidance becomes more likely later.
+:::
+
+# Phone checking and variable reinforcement
+
+Phones are difficult to ignore because they are built around reinforcement. Sometimes a notification is boring. Sometimes it is funny. Sometimes it is socially important. Sometimes there is no notification at all. That unpredictability matters.
+
+A **variable reinforcement schedule** rewards behavior unpredictably. These schedules can produce persistent behavior because the next check might be rewarding.
+
+# AI and immediate relief
+
+AI can enter the same reinforcement loop. A student is stuck on a concept. The feeling is unpleasant. Instead of trying to retrieve, generate an example, or sit with the difficulty, the student asks AI for the answer. The answer appears immediately. Confusion drops. Anxiety drops. The student feels relief.
+
+That relief reinforces asking AI early.
+
+Helpful sequence:
+
+1. Try first.
+2. Identify where you are stuck.
+3. Ask AI for a hint, critique, or example.
+4. Retrieve again without looking.
+
+Risky sequence:
+
+1. Feel effort.
+2. Ask AI for the answer.
+3. Feel relief.
+4. Move on.
+
+::: {.callout-tip title="AI learning check"}
+Before opening AI, ask:
+
+**Am I stuck, or am I avoiding effort?**
+
+If you are stuck after a genuine attempt, AI may help. If you are avoiding the first attempt, AI may replace the practice you need.
+:::
+
+# Observational learning and study culture
+
+Students also learn by watching other students. If the visible norm is cramming, students cram. If the visible norm is skipping reading, students skip reading. If everyone talks about all-nighters as heroic, sleep loss becomes part of the culture.
+
+Observational learning can also work in the other direction. Students can model better strategies for each other: using retrieval questions before rereading, comparing examples in groups, admitting confusion early, protecting sleep before exams, and using AI as a quizzer rather than an answer machine.
