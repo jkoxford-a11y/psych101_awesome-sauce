@@ -1,0 +1,31 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "PSYC101 Awesome Sauce"
+  site-url: "https://jkoxford-a11y.github.io/psych101_awesome-sauce/"
+  repo-url: "https://github.com/jkoxford-a11y/psych101_awesome-sauce"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: how-studying-works.qmd
+        text: How Studying Works
+  sidebar:
+    style: "docked"
+    search: true
+    contents:
+      - index.qmd
+      - how-studying-works.qmd
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    toc-depth: 3
+    number-sections: false
+    smooth-scroll: true
+    anchor-sections: true
+    link-external-newwindow: true
