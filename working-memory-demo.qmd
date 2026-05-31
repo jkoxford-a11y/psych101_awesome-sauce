@@ -1,0 +1,24 @@
+---
+title: "Working Memory Demo"
+subtitle: "Digit span and chunking"
+---
+
+This quick activity demonstrates that working memory is limited and that organization changes what the mind can hold.
+
+::: {.callout-note title="Connection to the chapter"}
+Use this demo with **Section 1: Attention Is the Gateway to Learning**. Students should experience the working-memory limit first, then connect the experience to chunking, cognitive load, and why organized studying works better than passive rereading.
+:::
+
+<iframe src="interactives/digit-span.html" title="Working Memory Digit Span Demo" width="100%" height="820" style="border: 1px solid #d8e0e8; border-radius: 14px;"></iframe>
+
+## Debrief Questions
+
+1. At what digit length did the task become difficult?
+2. Did you feel yourself trying to group the digits into chunks?
+3. Why is the chunked example easier than the unchunked example?
+4. How does this explain why disconnected facts are hard to study?
+5. How could you use chunking when studying psychology terms?
+
+::: {.callout-important title="Key Takeaway"}
+Working memory does not simply hold a fixed amount of information. It holds information better when that information is organized into meaningful chunks.
+:::
