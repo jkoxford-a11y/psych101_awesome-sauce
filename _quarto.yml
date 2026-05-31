@@ -12,12 +12,15 @@ website:
         text: Home
       - href: how-studying-works.qmd
         text: How Studying Works
+      - href: working-memory-demo.qmd
+        text: Working Memory Demo
   sidebar:
     style: "docked"
     search: true
     contents:
       - index.qmd
       - how-studying-works.qmd
+      - working-memory-demo.qmd
 
 format:
   html:
