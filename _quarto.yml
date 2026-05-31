@@ -16,6 +16,8 @@ website:
         menu:
           - href: chapters/attention-working-memory.qmd
             text: Attention & Working Memory
+          - href: chapters/attention-working-memory-active.qmd
+            text: Attention Active Evidence
           - href: chapters/encoding.qmd
             text: Encoding
           - href: chapters/retrieval.qmd
@@ -39,6 +41,7 @@ website:
       - section: "How Studying Works"
         contents:
           - chapters/attention-working-memory.qmd
+          - chapters/attention-working-memory-active.qmd
           - chapters/encoding.qmd
           - chapters/retrieval.qmd
           - chapters/spacing.qmd
