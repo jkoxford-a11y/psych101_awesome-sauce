@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Working Memory Demo: Digit Span</title>
+  <title>Working Memory Demo: Backward Digit Span</title>
   <style>
     body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.55; margin: 0; padding: 1.25rem; background: #f7f9fb; color: #17212b; }
-    .card { max-width: 780px; margin: 0 auto; background: white; border: 1px solid #d8e0e8; border-radius: 14px; padding: 1.25rem; box-shadow: 0 3px 14px rgba(0,0,0,.06); }
+    .card { max-width: 820px; margin: 0 auto; background: white; border: 1px solid #d8e0e8; border-radius: 14px; padding: 1.25rem; box-shadow: 0 3px 14px rgba(0,0,0,.06); }
     h1 { font-size: 1.45rem; margin: 0 0 .35rem; }
     h2 { font-size: 1.1rem; margin-top: 1.25rem; }
     .muted { color: #586574; }
-    .digits { font-size: 2.4rem; letter-spacing: .35rem; text-align: center; font-weight: 800; margin: 1.25rem 0; min-height: 3.5rem; color: #25476a; }
+    .digits { font-size: 2.65rem; letter-spacing: .35rem; text-align: center; font-weight: 800; margin: 1.25rem 0; min-height: 3.75rem; color: #25476a; }
     .controls { display: flex; flex-wrap: wrap; gap: .5rem; margin: 1rem 0; }
     button { border: 0; border-radius: 10px; padding: .65rem .9rem; font-weight: 700; background: #25476a; color: white; cursor: pointer; }
     button.secondary { background: #e9eef4; color: #17212b; }
@@ -20,36 +20,39 @@
     .good { background: #ecf8ef; border: 1px solid #b7dfc1; }
     .bad { background: #fff1ef; border: 1px solid #e6b9b1; }
     .row { display: grid; grid-template-columns: 1fr 1fr; gap: .75rem; }
+    .mode { display: inline-block; padding: .18rem .5rem; border-radius: 999px; background: #fff5dc; border: 1px solid #e5c56f; font-weight: 700; }
     @media (max-width: 640px) { .row { grid-template-columns: 1fr; } .digits { font-size: 2rem; letter-spacing: .22rem; } }
   </style>
 </head>
 <body>
   <main class="card">
-    <h1>Working Memory Demo: Digit Span</h1>
-    <p class="muted">This quick activity demonstrates that working memory is limited and that organization changes what the mind can hold.</p>
+    <h1>Working Memory Demo: Backward Digit Span</h1>
+    <p class="muted">This version is closer to the classroom/PPT demo: students see digits briefly, but must report them <strong>backward</strong>. That requires working memory, not just short-term storage.</p>
 
-    <h2>Round 1: Raw digits</h2>
-    <p>Click <strong>Show digits</strong>. Try to remember the digits in order. They will disappear quickly.</p>
+    <h2>Round 1: Repeat the digits backward</h2>
+    <p>Click <strong>Show digits</strong>. Read the digits in order, but when they disappear, type them <span class="mode">backward</span>.</p>
     <div class="digits" id="digits">Ready</div>
     <div class="controls">
       <button id="showBtn">Show digits</button>
       <button class="secondary" id="longerBtn">Make harder</button>
+      <button class="secondary" id="easierBtn">Make easier</button>
       <button class="secondary" id="resetBtn">Reset</button>
     </div>
-    <label for="answer"><strong>Your answer</strong></label>
-    <input id="answer" inputmode="numeric" autocomplete="off" placeholder="Type the digits in order" />
+    <label for="answer"><strong>Your answer: digits backward</strong></label>
+    <input id="answer" inputmode="numeric" autocomplete="off" placeholder="Example: if shown 4 1 9, type 914" />
     <div class="controls"><button id="checkBtn">Check</button></div>
-    <div id="feedback" class="feedback">Current length: <strong id="level">5</strong> digits.</div>
+    <div id="feedback" class="feedback">Current length: <strong id="level">3</strong> digits. Your task is to reverse them.</div>
 
-    <h2>Round 2: Chunking</h2>
-    <p>Now compare these two strings. Which one is easier to remember?</p>
+    <h2>Why backward is harder</h2>
+    <p>Forward digit span can be done partly by short-term storage: hold the digits and repeat them. Backward digit span adds a manipulation step: hold the digits, reorder them, and then respond. That is why it is a better demonstration of <strong>working memory</strong>.</p>
+
     <div class="row">
-      <div class="feedback"><strong>Unchunked:</strong><br><span style="font-size:1.25rem; letter-spacing:.1rem;">1 7 7 6 1 9 4 5 2 0 2 6</span></div>
-      <div class="feedback"><strong>Chunked:</strong><br><span style="font-size:1.25rem;">1776 &nbsp; 1945 &nbsp; 2026</span></div>
+      <div class="feedback"><strong>Storage demand:</strong><br>Keep the digits active long enough to answer.</div>
+      <div class="feedback"><strong>Manipulation demand:</strong><br>Reverse the order before responding.</div>
     </div>
 
     <div class="feedback" style="margin-top:1rem;">
-      <strong>Psychology point:</strong> working memory does not simply hold a fixed amount of information. It holds information better when that information is organized into meaningful chunks. That is why concepts, examples, categories, and patterns matter for studying.
+      <strong>Psychology point:</strong> studying often requires backward-digit-span-like work. You must hold ideas in mind, compare them, reorder them, connect them, and apply them. Looking at information is not enough; learning requires mental manipulation.
     </div>
   </main>
 
@@ -60,9 +63,10 @@
     const levelEl = document.getElementById('level');
     const showBtn = document.getElementById('showBtn');
     const longerBtn = document.getElementById('longerBtn');
+    const easierBtn = document.getElementById('easierBtn');
     const resetBtn = document.getElementById('resetBtn');
     const checkBtn = document.getElementById('checkBtn');
-    let length = 5;
+    let length = 3;
     let current = '';
 
     function makeDigits(n) {
@@ -71,18 +75,22 @@
       return s;
     }
 
+    function reverseDigits(s) {
+      return s.split('').reverse().join('');
+    }
+
     function showDigits() {
       current = makeDigits(length);
       answerEl.value = '';
       feedbackEl.className = 'feedback';
-      feedbackEl.innerHTML = `Current length: <strong>${length}</strong> digits. Watch closely.`;
+      feedbackEl.innerHTML = `Current length: <strong>${length}</strong> digits. Watch, then reverse them.`;
       digitsEl.textContent = current.split('').join(' ');
       showBtn.disabled = true;
       setTimeout(() => {
-        digitsEl.textContent = 'Type what you remember';
+        digitsEl.textContent = 'Type them backward';
         showBtn.disabled = false;
         answerEl.focus();
-      }, Math.max(1200, length * 450));
+      }, Math.max(1200, length * 500));
     }
 
     function checkAnswer() {
@@ -92,19 +100,27 @@
         feedbackEl.textContent = 'Show a digit string first.';
         return;
       }
-      if (ans === current) {
+      const correct = reverseDigits(current);
+      if (ans === correct) {
         feedbackEl.className = 'feedback good';
-        feedbackEl.innerHTML = `Correct. You held <strong>${length}</strong> digits in order. Try making it harder.`;
+        feedbackEl.innerHTML = `Correct. Shown: <strong>${current}</strong>. Backward: <strong>${correct}</strong>. Try making it harder.`;
       } else {
         feedbackEl.className = 'feedback bad';
-        feedbackEl.innerHTML = `Not quite. Correct answer: <strong>${current}</strong>. Your answer: <strong>${ans || '(blank)'}</strong>.`;
+        feedbackEl.innerHTML = `Not quite. Shown: <strong>${current}</strong>. Correct backward answer: <strong>${correct}</strong>. Your answer: <strong>${ans || '(blank)'}</strong>.`;
       }
+    }
+
+    function updateLevelText() {
+      levelEl.textContent = length;
+      feedbackEl.className = 'feedback';
+      feedbackEl.innerHTML = `Current length: <strong>${length}</strong> digits. Your task is to reverse them.`;
     }
 
     showBtn.addEventListener('click', showDigits);
     checkBtn.addEventListener('click', checkAnswer);
-    longerBtn.addEventListener('click', () => { length = Math.min(12, length + 1); levelEl.textContent = length; feedbackEl.className = 'feedback'; feedbackEl.innerHTML = `Current length: <strong>${length}</strong> digits.`; });
-    resetBtn.addEventListener('click', () => { length = 5; current = ''; answerEl.value = ''; digitsEl.textContent = 'Ready'; levelEl.textContent = length; feedbackEl.className = 'feedback'; feedbackEl.innerHTML = `Current length: <strong>${length}</strong> digits.`; });
+    longerBtn.addEventListener('click', () => { length = Math.min(10, length + 1); updateLevelText(); });
+    easierBtn.addEventListener('click', () => { length = Math.max(2, length - 1); updateLevelText(); });
+    resetBtn.addEventListener('click', () => { length = 3; current = ''; answerEl.value = ''; digitsEl.textContent = 'Ready'; updateLevelText(); });
     answerEl.addEventListener('keydown', (e) => { if (e.key === 'Enter') checkAnswer(); });
   </script>
 </body>
