@@ -1,0 +1,48 @@
+---
+title: "Sleep"
+subtitle: "Why sleep is part of studying"
+---
+
+::: {.callout-note title="Core question"}
+Why does sacrificing sleep often weaken the system that turns studying into memory?
+:::
+
+# Sleep is part of studying
+
+Many students treat sleep as the time left over after studying is finished. That is backwards.
+
+Sleep is part of the learning system. It affects attention, working memory, emotional regulation, motivation, immune function, and memory consolidation. When students sacrifice sleep to study, they may gain more exposure time but lose some of the biological conditions that make studying useful.
+
+# Sleep and attention
+
+Attention is the gateway to learning. Sleep loss weakens that gateway. When you are sleep-deprived, it becomes harder to sustain focus, ignore distractions, and hold information in working memory.
+
+If Emma stays up late rereading the chapter, the extra time may not help as much as she expects. As fatigue increases, her attention becomes less stable. Her working memory holds less. Her encoding becomes weaker.
+
+# Sleep and emotional regulation
+
+Sleep also affects emotion. The prefrontal cortex helps regulate attention, planning, inhibition, and context-sensitive decision-making. The amygdala is important for detecting emotionally significant events, especially threat. When people are sleep-deprived, prefrontal regulation of emotional responses can weaken.
+
+After poor sleep, small problems feel larger. Feedback feels more threatening. A difficult paragraph feels impossible. A quiz feels catastrophic.
+
+# Sleep and memory consolidation
+
+During waking study, attention and encoding create memory traces. During sleep, the brain continues to process some of that information. The hippocampus and cortex are especially important for explicit memories — the kinds of facts, concepts, and experiences students need in a psychology course.
+
+**Memory consolidation** is the neural process by which memories become more stable over time.
+
+::: {.callout-important title="Core principle"}
+Sleep is not wasted study time. Sleep is one of the conditions that helps attention, emotional regulation, and memory consolidation work properly.
+:::
+
+# The all-nighter problem
+
+An all-nighter can damage learning in several ways:
+
+- Attention declines.
+- Working memory weakens.
+- Emotion regulation worsens.
+- Consolidation is reduced.
+- Retrieval suffers.
+
+The better strategy is not “never study at night.” The better strategy is to avoid making sleep the payment for poor spacing.
