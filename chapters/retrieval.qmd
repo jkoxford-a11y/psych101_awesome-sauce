@@ -1,0 +1,66 @@
+---
+title: "Retrieval"
+subtitle: "Why testing is part of learning"
+---
+
+::: {.callout-note title="Core question"}
+Why is trying to remember one of the best ways to learn?
+:::
+
+# Retrieval is learning
+
+Most students think testing comes after learning. That is only partly true.
+
+Testing can measure learning, but testing can also **create** learning. Every time you try to pull information from memory, you practice the exact skill you will need later. Retrieval strengthens access to the memory.
+
+# Recognition, recall, and application
+
+| Level | What it requires | Example |
+|---|---|---|
+| Recognition | Identify the correct information when it is present | Pick the correct definition from multiple choices |
+| Recall | Produce the information without seeing it | Define “working memory” from memory |
+| Application | Use the information in a new situation | Diagnose why a student’s study method failed |
+
+Recognition is usually easier than recall because the answer is already in front of you. Recall is harder because you must produce the information yourself. Application is often harder still because you must recognize when the concept fits a new example.
+
+::: {.callout-warning title="Student Myth"}
+**Myth:** “If I recognize the answer, I know the concept.”
+
+Recognition is useful, but it is not the same as recall or application.
+:::
+
+# Retrieval practice and the testing effect
+
+**Retrieval practice** means trying to remember information without looking at it first. This can include answering practice questions, writing a definition from memory, drawing a diagram without notes, or teaching the idea aloud.
+
+The **testing effect** is the finding that retrieving information improves later memory for that information. A quiz is not just an evaluation. It can also be a learning event.
+
+::: {.callout-tip title="Study move: blank-page retrieval"}
+Before rereading a section, take out a blank page and write everything you remember about the topic. Then check your notes.
+
+Mark what you remembered correctly, what you partly remembered, and what you missed completely.
+:::
+
+# Errors are information
+
+Students often treat mistakes during practice as failure. Psychologically, mistakes during practice are information. A mistake tells you where the retrieval pathway is weak.
+
+Correcting a mistake after retrieval can be especially useful because the mind has already tried to organize the information. Feedback then has a place to attach.
+
+# AI learning check: use AI as a quizzer
+
+AI can be a strong retrieval-practice tool if you use it correctly.
+
+Helpful AI prompts:
+
+- “Quiz me on this section one question at a time. Do not show the answer until I respond.”
+- “Ask me to explain working memory in my own words, then critique my answer.”
+- “Give me a new example and ask me which concept applies.”
+
+The rule is simple:
+
+**AI should ask you to think before it tells you what to think.**
+
+::: {.callout-note title="Interactive placeholder: retrieval cards"}
+**Planned interactive:** click-to-reveal retrieval cards. Students see a question first and must type or write an answer before revealing the explanation.
+:::
